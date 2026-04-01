@@ -1,0 +1,154 @@
+# Jumia Product Performance Dashboard
+
+## Project Overview
+
+This project focuses on analyzing product performance data from Jumia using Microsoft Excel. The goal was to understand how pricing, discounts, and customer feedback influence product engagement and overall performance. The final output is an interactive dashboard that supports data-driven decision-making.
+
+---
+
+## Dataset Description
+
+The dataset contains product-level information including:
+
+* Product name
+* Current price
+* Old price
+* Discount percentage
+* Number of reviews
+* Product rating
+
+<img width="1306" height="45" alt="image" src="https://github.com/user-attachments/assets/b2ac0ae4-c6b6-4c58-b900-7ea5eda8e770" />
+
+---
+
+## Data Cleaning and Preparation
+
+Before analysis, several data quality issues were addressed:
+
+* Missing values in the Reviews and Rating columns were identified and handled
+* Duplicate product entries were removed
+* Price columns were cleaned by removing currency symbols and converting them into numeric values
+* Discount values were formatted correctly as percentages
+* Ratings originally stored as text were converted into numeric values
+* Negative review values were corrected to ensure consistency
+
+These steps ensured the dataset was accurate and ready for analysis.
+<img width="1574" height="624" alt="image" src="https://github.com/user-attachments/assets/eb3158c0-54dc-46ca-907a-2aea6d43fcfd" />
+
+---
+
+## Data Enrichment
+
+Additional columns were created to enhance the analysis:
+
+* **Discount Amount** calculated as the difference between old price and current price
+  <img width="1064" height="243" alt="image" src="https://github.com/user-attachments/assets/46b4bac5-97cf-4115-9df8-25b80e694aaa" />
+
+* **Rating Category** grouped into Poor, Average, and Excellent
+  <img width="988" height="80" alt="image" src="https://github.com/user-attachments/assets/04c54ee8-7e79-43f6-8557-3492bcd6d75a" />
+
+* **Discount Category** grouped into Low, Medium, and High
+<img width="935" height="96" alt="image" src="https://github.com/user-attachments/assets/d9a2c11a-ec4a-4a96-99f4-7592e371b448" />
+
+These new fields made it easier to segment and interpret the data.
+
+---
+
+## Analysis and Insights
+<img width="1387" height="612" alt="image" src="https://github.com/user-attachments/assets/e0206411-a9c9-41b4-9bb2-1949362a68a9" />
+
+### Descriptive Analysis
+
+The dataset was explored to understand general patterns:
+
+* Calculated average current price, old price, discount percentage, and rating
+* Identified the most expensive and least expensive products
+* Compared average ratings and discounts across discount categories
+* Analyzed how products are distributed across rating categories
+
+This provided a summary view of the dataset.
+<img width="1518" height="130" alt="image" src="https://github.com/user-attachments/assets/410f1595-82b8-4070-896e-d342382b62f6" />
+
+---
+
+### Trend and Relationship Analysis
+
+Relationships between key variables were examined:
+
+* Compared discount percentage with number of reviews
+* Analyzed how ratings relate to customer engagement
+* Observed whether higher discounts lead to more reviews
+* Evaluated if highly rated products receive more engagement
+
+This helped identify patterns in customer behavior.
+<img width="977" height="675" alt="image" src="https://github.com/user-attachments/assets/540d365b-6a70-499d-abe4-2202e9ef741f" />
+
+---
+
+### Product Performance Analysis
+
+Top and bottom performing products were identified:
+
+* Top 10 products with the highest discounts
+* Top 10 products with the most reviews
+* Top 5 highest-rated and bottom 5 lowest-rated products
+* Comparison between high-discount and low-discount products based on ratings and reviews
+
+This section highlights which products perform best and which need improvement.
+<img width="1443" height="658" alt="image" src="https://github.com/user-attachments/assets/8f859c57-f50c-4d85-95c3-2b13412be384" />
+
+---
+
+## Dashboard Design
+
+An interactive Excel dashboard was created with the following sections:
+
+### Overview
+
+* Total number of products
+* Average rating
+* Average discount percentage
+* Total number of reviews
+
+### Product Performance
+
+* Top products by rating
+* Top products by reviews
+* Top products by discount
+
+### Trend Analysis
+
+* Visual comparison of discount versus reviews
+* Visual comparison of rating versus reviews
+
+### Product Categories
+
+* Distribution of products by rating category
+* Distribution of products by discount category
+<img width="635" height="521" alt="image" src="https://github.com/user-attachments/assets/4f5cde94-3335-4493-9040-c0ef1c74a2f5" />
+
+---
+
+## Tools and Techniques Used
+
+* Pivot tables for data summarization
+* Charts including bar charts, pie charts, and scatter plots
+* Conditional formatting to highlight key insights
+* Slicers for interactivity and filtering
+
+---
+
+## Key Insights
+
+* Products with higher discounts tend to attract more customer attention, but not always better ratings
+* Highly rated products generally receive more reviews, indicating trust and satisfaction
+* Some products have high discounts but low ratings, suggesting possible quality issues
+* Balanced pricing and quality appear to drive the best performance
+
+---
+
+## Conclusion
+
+This project demonstrates how Excel can be used to transform raw data into meaningful insights. The dashboard provides a clear view of product performance and helps identify trends that can guide better business decisions.
+
+---
